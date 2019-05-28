@@ -1,0 +1,9 @@
+.overallContainer {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 745px;
+  height: 593px;
+  background: rgba(160, 94, 177, 0.2);
+}
+

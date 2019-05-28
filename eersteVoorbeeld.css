@@ -1,0 +1,91 @@
+.wapper {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #991eb8;
+  border: 4px dashed #75e040;
+  color:#fcf9f9;
+  font-family: 'Merienda One', cursive;
+}
+
+.box {
+  
+}
+
+#logoHome {
+  
+}
+
+img #enkelLogo {
+ background-repeat: repeat;
+}
+
+#name {
+  color: #20b639db;
+  font-size: 70px;
+}
+
+#geluidsButton {
+  background-color: #991eb8;
+  border: 4px dashed #75e040;
+  color:#fcf9f9;
+}
+
+.sidebarHomeLinks {
+  background-color:;
+  border: 4px dashed #75e040;
+  color: #75e040;
+}
+
+.jumbotronHome {
+
+}
+
+#titleWelcome {
+  border: 4px dashed #75e040;
+
+}
+
+#spelRegels {
+
+}
+
+hr {
+
+}
+
+#spelUitleg {
+
+}
+
+#playGame {
+  border: 4px dashed #75e040;
+
+}
+
+#sidebarHomeRechts {
+
+}
+
+#spelersLijst {
+
+}
+
+.timer {
+
+}
+
+#footerHome {
+
+}
+
+#footerHome {
+
+}
+
+#linkWebontwikkelaars {
+
+}
+
