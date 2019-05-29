@@ -1,0 +1,170 @@
+// ANCHOR SASS variables
+$primary-color: #a05eb1;
+$secondary-color: #633a71;
+$border-color: #c584f3;
+$bg-body-color: #f6f6f6;
+
+// ANCHOR SASS @extend
+%btn-style {
+  color: white;
+  padding: 6px 24px;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+%btn-move {
+  position: relative;
+  top: 2px;
+}
+
+body {
+  background-color: $bg-body-color;
+  font-family: "Merienda One", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+// ANCHOR navbar
+#navbar {
+  height: 50px;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .navContainer {
+    width: 800px;
+
+    #speaker {
+      color: $secondary-color;
+      cursor: pointer;
+
+      &:hover {
+        color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+        color: #bc80ea;
+      }
+    }
+
+    .btn-login {
+      background-color: $secondary-color;
+      @extend %btn-style;
+
+      &:hover {
+        background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+        background-color: #bc80ea;
+      }
+      &:active {
+        @extend %btn-move;
+      }
+    }
+  }
+}
+
+// ANCHOR Jumbotron
+.jumbotron {
+  width: 800px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: rgba(160, 94, 177, 0.2);
+  border: 1px solid $primary-color;
+}
+
+h1 {
+  color: #298939;
+  margin: 0;
+}
+
+.player-on {
+  color: #633a71;
+  margin: 0;
+}
+
+.btn-group {
+  width: 600px;
+  > * {
+    @extend %btn-style;
+  }
+
+  > button:active {
+    @extend %btn-move;
+  }
+  > button:focus {
+    outline: 0;
+  }
+  .btn-register {
+    background-color: #f0a30c;
+    &:hover {
+      background-color: #f0a30c;
+      background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+      background-color: #ffab23;
+    }
+  }
+
+  .btn-guest {
+    background-color: #53af50;
+    &:hover {
+      background: linear-gradient(to bottom, #68a54b 5%, #acfbac 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#acfbac',GradientType=0);
+      background-color: #68a54b;
+    }
+  }
+
+  .btn-createRoom {
+    background-color: #633a71;
+    &:hover {
+      background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de',GradientType=0);
+      background-color: #a20dbd;
+    }
+  }
+}
+
+// ANCHOR footer
+footer {
+  background-color: rgba(160, 94, 177, 0.2);
+  height: 50px;
+}
+
+.footerContainer {
+  width: 800px;
+}
+
+.copyright {
+  margin: 0;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.links {
+  width: 300px;
+}
+
+.container {
+  // border: 1px solid blue;
+  width: 800px;
+ 
+
+}
+
+.row {
+  border: 3px dotted green;
+}
+
+.col-md-6 {
+  border: 1px solid red;
+}
+
+#leaderboard {
+ display:grid;
+ 
+}

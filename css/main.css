@@ -1,0 +1,139 @@
+.btn-group > *, #navbar .navContainer .btn-login {
+  color: white;
+  padding: 6px 24px;
+  border: 1px solid #c584f3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-group > button:active, #navbar .navContainer .btn-login:active {
+  position: relative;
+  top: 2px;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Merienda One", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  height: 50px;
+  background-color: #a05eb1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#navbar .navContainer {
+  width: 800px;
+}
+#navbar .navContainer #speaker {
+  color: #633a71;
+  cursor: pointer;
+}
+#navbar .navContainer #speaker:hover {
+  color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  color: #bc80ea;
+}
+#navbar .navContainer .btn-login {
+  background-color: #633a71;
+}
+#navbar .navContainer .btn-login:hover {
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  background-color: #bc80ea;
+}
+.jumbotron {
+  width: 800px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: rgba(160, 94, 177, 0.2);
+  border: 1px solid #a05eb1;
+}
+
+h1 {
+  color: #298939;
+  margin: 0;
+}
+
+.player-on {
+  color: #633a71;
+  margin: 0;
+}
+
+.btn-group {
+  width: 600px;
+}
+.btn-group > button:focus {
+  outline: 0;
+}
+.btn-group .btn-register {
+  background-color: #f0a30c;
+}
+.btn-group .btn-register:hover {
+  background-color: #f0a30c;
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffab23", endColorstr="#ffec64",GradientType=0);
+  background-color: #ffab23;
+}
+.btn-group .btn-guest {
+  background-color: #53af50;
+}
+.btn-group .btn-guest:hover {
+  background: linear-gradient(to bottom, #68a54b 5%, #acfbac 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#68a54b", endColorstr="#acfbac",GradientType=0);
+  background-color: #68a54b;
+}
+.btn-group .btn-createRoom {
+  background-color: #633a71;
+}
+.btn-group .btn-createRoom:hover {
+  background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a20dbd", endColorstr="#c123de",GradientType=0);
+  background-color: #a20dbd;
+}
+
+footer {
+  background-color: rgba(160, 94, 177, 0.2);
+  height: 50px;
+}
+
+.footerContainer {
+  width: 800px;
+}
+
+.copyright {
+  margin: 0;
+  color: #a05eb1;
+}
+
+a {
+  text-decoration: none;
+  color: #a05eb1;
+}
+
+.links {
+  width: 300px;
+}
+
+.container {
+  width: 800px;
+}
+
+.row {
+  border: 3px dotted green;
+}
+
+.col-md-6 {
+  border: 1px solid red;
+}
+
+#leaderboard {
+  display: grid;
+}
+
+/*# sourceMappingURL=main.css.map */
