@@ -1,61 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="gamepage.css" />
-  <title id="titleHome">Game page</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="welcome.css" />
+  <title>Game page</title>
 </head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 
 <body>
-<!-- De achtergrond container waar alle elementen instaan -->
-<div class="overallContainer">
-  
-<!-- De navigatiebalk waar de login button instaat -->
-  <div class="headerLogoLogin">
-    <h1 id="">DRAWWWL<IMG id="logo" src="enkel logo.JPG"></IMG>S</h1>
-    <button id="Login">
-      <h5 id="LoginName/guestName">Login</h5>
-    </button>
-  </div>
-
-  
-<!-- De linker kolom waar de spelerslijst instaat -->
-  <div class="sidebarPlayer">
-    <div class="headerPlayer">
-      <h3 id="Players">Players</h3>
+  <!-- div navbar with volume icon & login button -->
+  <div id="navbar">
+    <div class="navContainer d-flex justify-content-between">
+      <i class="fas fa-volume-up fa-2x" id="speaker"></i>
+      <button class="btn-login">Login</button>
     </div>
   </div>
 
-<!-- De canvas waar je in tekent -->
+  <!--  -->
 
-
-<!-- De rechter kolom waar de spelers hun antwoorden instaan -->
-  <div class="sidebarChatroom"> 
-    <div class="headerChatroom">
-      <h3 id="Chatroom">Chatroom</h3>
+  <!-- De achtergrond container waar alle elementen instaan -->
+  <div class="overallContainer">
+  
+    <!-- De navigatiebalk waar de login button instaat -->
+    <div class="headerLogoLogin">
+      <h1 id="">DRAWWWL<IMG id="logo" src="enkel logo.JPG"></IMG>S</h1>
+      <button id="Login">
+        <h5 id="LoginName/guestName">Login</h5>
+      </button>
     </div>
+  
+  
+    <!-- De linker kolom waar de spelerslijst instaat -->
+    <div class="sidebarPlayer">
+      <div class="headerPlayer">
+        <h3 id="Players">Players</h3>
+        <img id="picture1" src="avatorManuel.GIF" alt="avator">
+        <h5 id="naam1">Manuel</h5>
+        <h6 id="punten1">206 pt</h6>
+
+        <img id="picture2" src="avatorGregory.GIF" alt="avator">
+        <h5 id="naam2">Gregory</h5>
+        <h6 id="punten2">809 pt</h6>
+
+        <img id="picture3" src="avatorChristophe.GIF" alt="avator">
+        <h5 id="naam3">Christophe</h5>
+        <h6 id="punten3">1042 pt</h6>
+
+        <img id="picture4" src="avatorMireille.GIF" alt="avator">
+        <h5 id="naam4">Mireille</h5>
+        <h6 id="punten4">89 pt</h6>
+
+        <img id="picture5" src="avatorKathy.GIF" alt="avator">
+        <h5 id="naam5">Kathy</h5>
+        <h6 id="punten5">52 pt</h6>
+      </div>
+    </div>
+  
+    <!-- De canvas waar je in tekent -->
+    <div class="headerCanvas">
+      <img src="" alt="">
+    </div>
+  
+    <!-- De rechter kolom waar de spelers hun antwoorden instaan -->
+    <div class="sidebarChatroom">
+      <div class="headerChatroom">
+        <h3 id="Chatroom">Chatroom</h3>
+      </div>
+    </div>
+  
+  
   </div>
 
 
-</div>
+  <!-- footer -->
 
+    <footer class="d-flex justify-content-center align-items-center">
+      <div class="footerContainer d-flex justify-content-between">
+        <p class="copyright">©2019<span>DRAWWWL <img id="logoFooter" class="h-5 w-5" src="enkel logo.JPG" alt="logo Drawwwls"> S</span>. All rights reserved</p>
+      </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-  <script src="gamepage.js"></script>
-</body>
+      <div class="links d-flex justify-content-end justify-content-between flex-row ">
+          <a href="#">How to play</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+      
+    </footer>
 
+    <!-- links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/     popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous">
+    </script>
+  </body>
 </html>
+
+
+
+
+
+

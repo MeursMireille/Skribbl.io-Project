@@ -62,7 +62,7 @@ body {
 
 /* jumbotron with h1, paragraph (playeramount), couple of buttons */
 
-#jumbotron {
+#headerDraw {
   width: 800px;
   height: 250px;
   margin: auto;
@@ -120,6 +120,11 @@ footer {
 .copyright {
   margin: 0;
   color: #a05eb1;
+}
+
+span {
+  color: #298939;
+  font-weight: 200;
 }
 
 a {
