@@ -1,0 +1,144 @@
+.jumbotron .btn-group > *, #navbar .navContainer .btn-login {
+  color: white;
+  padding: 6px 24px;
+  border: 1px solid #c584f3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.jumbotron .btn-group > button:active, #navbar .navContainer .btn-login:active {
+  position: relative;
+  top: 2px;
+}
+
+.container .leaderboard th,
+.container .leaderboard td {
+  border-bottom: 1px solid #633a70;
+}
+
+.container .privateRoom, .container .guestRoom, .container .leaderboard {
+  border: 1px solid rgba(160, 94, 177, 0.2);
+  border-radius: 0.3rem;
+  background-color: #a05eb1;
+  color: white;
+  min-height: 220px;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Merienda One", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  margin-right: 8px;
+}
+
+#navbar {
+  height: 50px;
+  background-color: #a05eb1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+}
+#navbar .navContainer {
+  width: 800px;
+}
+#navbar .navContainer #speaker {
+  color: #633a71;
+  cursor: pointer;
+}
+#navbar .navContainer #speaker:hover {
+  color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  color: #bc80ea;
+}
+#navbar .navContainer .btn-login {
+  background-color: #633a71;
+}
+#navbar .navContainer .btn-login:hover {
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  background-color: #bc80ea;
+}
+.jumbotron {
+  width: 800px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: rgba(160, 94, 177, 0.2);
+  border: 1px solid #a05eb1;
+}
+.jumbotron .player-on {
+  color: #633a71;
+  margin: 0;
+}
+.jumbotron .btn-group {
+  width: 600px;
+}
+.jumbotron .btn-group > button:focus {
+  outline: 0;
+}
+.jumbotron .btn-group .btn-register {
+  background-color: #f0a30c;
+}
+.jumbotron .btn-group .btn-register:hover {
+  background-color: #f0a30c;
+  background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffab23", endColorstr="#ffec64",GradientType=0);
+  background-color: #ffab23;
+}
+.jumbotron .btn-group .btn-guest {
+  background-color: #53af50;
+}
+.jumbotron .btn-group .btn-guest:hover {
+  background: linear-gradient(to bottom, #68a54b 5%, #acfbac 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#68a54b", endColorstr="#acfbac",GradientType=0);
+  background-color: #68a54b;
+}
+.jumbotron .btn-group .btn-createRoom {
+  background-color: #633a71;
+}
+.jumbotron .btn-group .btn-createRoom:hover {
+  background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a20dbd", endColorstr="#c123de",GradientType=0);
+  background-color: #a20dbd;
+}
+
+.container {
+  width: 830px;
+}
+.container .panel-heading {
+  background-color: #633a71;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+.container .guestRoom {
+  margin-bottom: 30px;
+}
+footer {
+  background-color: rgba(160, 94, 177, 0.2);
+  height: 50px;
+}
+footer .footerContainer {
+  width: 800px;
+}
+footer .footerContainer .copyright {
+  margin: 0;
+  color: #a05eb1;
+}
+footer .footerContainer .links {
+  width: 300px;
+}
+footer .footerContainer .links a {
+  text-decoration: none;
+  color: #a05eb1;
+}
+
+/*# sourceMappingURL=main.css.map */

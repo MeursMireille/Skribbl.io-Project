@@ -1,5 +1,9 @@
 body {
-  background-color: rgba(160, 94, 177, 0.2);
+  /* background-color: rgba(160, 94, 177, 0.2); */
+  background-color: #f6f6f6;
+  font-family: "Merienda One", cursive;
+  margin: 0;
+  padding: 0;
 }
 
 /* navbar with login btn & speaker */
@@ -30,41 +34,27 @@ body {
 }
 
 .btn-login:hover {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.05, #bc80ea),
-    color-stop(1, #dfbdfa)
-  );
-  background: -moz-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
-  background: -webkit-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
-  background: -o-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
-  background: -ms-linear-gradient(top, #bc80ea 5%, #dfbdfa 100%);
   background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
   background-color: #bc80ea;
 }
-.btn-login:active,
-.btn-register:active {
-  position: relative;
-  top: 1px;
-}
-
-.btn-login:focus,
-.btn-register:focus {
-  outline: 0;
-}
 
 #speaker {
   color: #633a71;
+  cursor: pointer;
+}
+
+#speaker:hover {
+  color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+  color: #bc80ea;
 }
 
 /* jumbotron with h1, paragraph (playeramount), couple of buttons */
 
 #headerDraw {
   width: 800px;
-  height: 250px;
+  height: 200px;
   margin: auto;
   background-color: rgba(160, 94, 177, 0.2);
   border: 1px solid #a05eb1;
@@ -72,20 +62,21 @@ body {
 
 .display-4 {
   color: #298939;
+  margin: 0;
 }
 
 .playersOnline {
   color: #633a71;
+  margin: 0;
 }
 
 .btn-group {
-  width: 400px;
+  width: 600px;
 }
 
-.btn-register {
-  background-color: #f0a30c;
+.btn-group > * {
   color: white;
-  border: 1px solid rgba(160, 94, 177, 0.2);
+  border: 1px solid #c584f3;
   padding: 6px 24px;
   border-radius: 5px;
   text-decoration: none;
@@ -93,21 +84,49 @@ body {
   font-weight: bold;
 }
 
+.btn-register {
+  background-color: #f0a30c;
+}
 .btn-register:hover {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.05, #ffab23),
-    color-stop(1, #ffec64)
-  );
-  background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+  background-color: #f0a30c;
   background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
   background-color: #ffab23;
+}
+
+.btn-guest {
+  background-color: #53af50;
+}
+
+.btn-guest:hover {
+  background: linear-gradient(to bottom, #68a54b 5%, #acfbac 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68a54b', endColorstr='#acfbac',GradientType=0);
+  background-color: #68a54b;
+}
+
+.btn-createRoom {
+  background-color: #633a71;
+}
+
+.btn-createRoom:hover {
+  background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a20dbd', endColorstr='#c123de',GradientType=0);
+  background-color: #a20dbd;
+}
+
+.btn-login:active,
+.btn-register:active,
+.btn-guest:active,
+.btn-createRoom:active {
+  position: relative;
+  top: 2px;
+}
+
+.btn-login:focus,
+.btn-register:focus,
+.btn-guest:focus,
+.btn-createRoom:focus {
+  outline: 0;
 }
 
 /* footer */

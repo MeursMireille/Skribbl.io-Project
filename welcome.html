@@ -10,62 +10,154 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="welcome.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/feb748bdcc.js"></script>
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/icon-paars.ico" />
   </head>
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-    crossorigin="anonymous"
-  />
+
   <body>
-    <!-- div navbar with volume icon & login button -->
+    <!-- ANCHOR navbar -->
 
     <div id="navbar">
       <div class="navContainer d-flex justify-content-between">
         <i class="fas fa-volume-up fa-2x" id="speaker"></i>
+
         <button class="btn-login">Login</button>
       </div>
     </div>
 
-
-    <!-- jumbotron -->
+    <!-- ANCHOR jumbotron -->
 
     <div
-      class="jumbotron mt-5 mb-5 p-0 d-flex flex-column align-items-center"
-      id="jumbotron"
+      class="jumbotron p-0 d-flex flex-column align-items-center justify-content-between"
     >
-      <h1 class="display-4">DRAWWWLS</h1>
-      <p class="playersOnline">x amount of players are online</p>
+      <!-- <h1 class="display-4">DRAWWWLS</h1> -->
+
+      <img
+        src="images/logo-paars.png"
+        alt="logo"
+        class="logo"
+        height="120"
+        width="320"
+      />
+      <p class="player-on mb-3">
+        <span class="player-nr">x</span> amount of players are online
+      </p>
       <div class="btn-group d-flex justify-content-around">
         <button class="btn-register">Register</button>
         <button class="btn-guest">Play as guest</button>
         <button class="btn-createRoom">+ Create room</button>
       </div>
     </div>
-    <div class="container">
+
+    <!-- ANCHOR Leaderboard, Guest & Private rooms -->
+    <div class="container mb-5">
       <div class="row">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-        earum corrupti magnam, corporis veritatis laboriosam consectetur! Minima
-        veritatis distinctio nemo quasi aperiam nesciunt consequuntur porro
-        sapiente, laboriosam odit placeat doloremque autem accusamus natus
-        numquam cum nisi veniam. Fuga pariatur aliquid architecto harum non
-        alias doloribus, aliquam at repudiandae atque quia reprehenderit ducimus
-        suscipit fugiat fugit voluptates repellendus nulla, cumque commodi autem
-        asperiores tempora iusto cupiditate aperiam. Ipsum, pariatur,
-        perferendis minus corrupti cumque optio labore explicabo quisquam est
-        tempora qui ratione alias odit asperiores earum! Autem molestias
-        voluptatem eligendi officiis porro. Quae cum eveniet et nisi iusto
-        impedit! Illum consequatur esse, ipsum illo nostrum commodi expedita
-        asperiores possimus rerum nesciunt temporibus suscipit qui nam voluptas
-        cupiditate quia quaerat veritatis exercitationem eligendi?
+        <div class="col-md-6">
+          <div class="leaderboard">
+            <div class="panel panel-default">
+              <div class="panel-heading align-items-center d-flex">
+                <div class="title">
+                  <i class="fas fa-trophy"></i>
+                  <span>Leaderboard</span>
+                </div>
+              </div>
+              <div class="panel-body text-left pl-4 pr-4 pt-3 pb-3">
+                <table style="width:100%">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Nickname</th>
+                    <th>Points</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>f0rest</td>
+                    <td>1600pts</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>ZyWoo</td>
+                    <td>1200pts</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>s1mple</td>
+                    <td>1000pts</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>TwistZ</td>
+                    <td>800pts</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="guestRoom">
+                <div class="panel panel-default">
+                  <div
+                    class="panel-heading align-items-center d-flex justify-content-between"
+                  >
+                    <div class="title">
+                      <i class="fas fa-door-open"></i>
+                      <span>Guest Rooms</span>
+                    </div>
+
+                    <div class="guest-stats">
+                      <i class="fas fa-bars"></i>
+                      <span>2</span>
+                    </div>
+                  </div>
+                  <div class="panel-body pl-4 pr-4 pt-3 pb-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="privateRoom">
+                <div class="panel panel-default">
+                  <div
+                    class="panel-heading align-items-center d-flex justify-content-between"
+                  >
+                    <div class="title">
+                      <i class="fas fa-lock"></i> <span>Private rooms</span>
+                    </div>
+
+                    <div class="priv-stats">
+                      <i class="fas fa-bars"></i>
+                      <span>3</span>
+                    </div>
+                  </div>
+                  <div class="panel-body pl-4 pr-4 pt-3 pb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores at quibusdam temporibus consequuntur molestiae ab
+                    fugit tempora minus quidem natus.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-
-<!-- footer -->
-
+    <!-- ANCHOR footer -->
     <footer class="d-flex justify-content-center align-items-center">
       <div class="footerContainer d-flex justify-content-between">
         <p class="copyright">©2019 DRAWWWLS. All rights reserved</p>
