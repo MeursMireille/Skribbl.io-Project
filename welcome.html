@@ -40,10 +40,8 @@
     <!-- ANCHOR jumbotron -->
 
     <div
-      class="jumbotron p-0 d-flex flex-column align-items-center justify-content-between"
+      class="jumbotron p-0 d-flex flex-column align-items-center justify-content-around"
     >
-      <!-- <h1 class="display-4">DRAWWWLS</h1> -->
-
       <img
         src="images/logo-paars.png"
         alt="logo"
@@ -51,17 +49,18 @@
         height="120"
         width="320"
       />
-      <p class="player-on mb-3">
+
+      <p class="player-on mb-4">
         <span class="player-nr">x</span> amount of players are online
       </p>
-      <div class="btn-group d-flex justify-content-around">
+      <div class="btn-group d-flex justify-content-around mb-3">
         <button class="btn-register">Register</button>
         <button class="btn-guest">Play as guest</button>
         <button class="btn-createRoom">+ Create room</button>
       </div>
     </div>
 
-    <!-- ANCHOR Leaderboard, Guest & Private rooms -->
+    <!-- ANCHOR Leaderboard -->
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-6">
@@ -105,10 +104,11 @@
             </div>
           </div>
         </div>
+        <!-- ANCHOR Guest-rooms -->
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-12">
-              <div class="guestRoom">
+              <div class="guest-rooms">
                 <div class="panel panel-default">
                   <div
                     class="panel-heading align-items-center d-flex justify-content-between"
@@ -118,19 +118,33 @@
                       <span>Guest Rooms</span>
                     </div>
 
-                    <div class="guest-stats">
+                    <div class="active-rooms">
                       <i class="fas fa-bars"></i>
-                      <span>2</span>
+                      <span>1</span>
                     </div>
                   </div>
-                  <div class="panel-body pl-4 pr-4 pt-3 pb-3"></div>
+                  <div
+                    class="panel-body pl-4 pr-4 pt-3 pb-3 d-flex justify-content-between"
+                  >
+                    <div class="guest-room-info d-flex flex-column">
+                      <span>Guestroom 1</span>
+                      <span class="status-rounds">Playing round 1 of 3</span>
+                    </div>
+                    <div
+                      class="p-count d-flex flex-column justify-content-between align-items-end"
+                    >
+                      <i class="fas fa-user-friends"></i>
+                      <span class="player-count">2/6</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- ANCHOR Private-rooms -->
           <div class="row">
             <div class="col-md-12">
-              <div class="privateRoom">
+              <div class="private-rooms">
                 <div class="panel panel-default">
                   <div
                     class="panel-heading align-items-center d-flex justify-content-between"
@@ -139,16 +153,26 @@
                       <i class="fas fa-lock"></i> <span>Private rooms</span>
                     </div>
 
-                    <div class="priv-stats">
+                    <div class="active-rooms">
                       <i class="fas fa-bars"></i>
-                      <span>3</span>
+                      <span>1</span>
                     </div>
                   </div>
-                  <div class="panel-body pl-4 pr-4 pt-3 pb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores at quibusdam temporibus consequuntur molestiae ab
-                    fugit tempora minus quidem natus.
+                  <div
+                    class="panel-body pl-4 pr-4 pt-3 pb-3 d-flex justify-content-between"
+                  >
+                    <div class="private-room-info d-flex flex-column">
+                      <span>Private room 1</span>
+                      <span class="status-rounds">Playing round 2 of 3</span>
+                    </div>
+                    <div
+                      class="p-count d-flex flex-column justify-content-between offset-6 align-items-end"
+                    >
+                      <i class="fas fa-user-friends"></i>
+                      <span class="player-count">4/6</span>
+                    </div>
                   </div>
+                  
                 </div>
               </div>
             </div>
