@@ -1,0 +1,220 @@
+//Reset CSS
+//@import '/@import/reset';
+
+
+//Mixin responsive
+/*@media only screen and (min-width:640px) {
+   @import "640up";
+}
+@media only screen and (min-width:768px) {
+   @import "768up";
+}
+@media only screen and (min-width:1030px) {
+   @import "1030up";
+}
+@media only screen and (min-width:1240px) {
+   @import "1240up";
+}
+@media print {
+   @import "print";
+}*/
+
+
+//Border radius aanpassen
+@mixin border-radius($radius:5px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+// ANCHOR SASS variables
+$primary-color: #a05eb1;
+$secondary-color: #633a71;
+$dark-color: rgba(160, 94, 177, 0.2);
+$border-color: #c584f3;
+$bg-body-color: #f6f6f6;
+$text-color: white;
+/*
+//Variables =
+//Colors
+$bodyBackground: #f6f6f6; 
+$buttonColor: white;
+$registerBackground: #f0a30c;
+$buttonborder: #c584f3;
+$backgroundButton: #633a71;
+$navbarBorder: rgba(160, 94, 177, 0.2);
+$navbarBackground: #a05eb1;
+$spanColor: #298939;
+$btnRegister: #f0a30c;
+$btnGuest: #53af50;
+$btnCreateRoom: #633a71;*/
+
+// Variables
+$font-stack: "Merienda One", cursive;
+$font-weight-bold: bold;
+$font-size: 15px;
+$border-weight: 1px solid;
+
+
+// ANCHOR SASS @extend
+%btn-style {
+  color: $text-color;
+  padding: 6px 24px;
+  border: $border-weight $border-color;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: $font-size;
+  font-weight: $font-weight-bold;
+}
+
+%btn-move {
+  position: relative;
+  top: 2px;
+}
+
+%table-b-border {
+  th,
+  td {
+    border-bottom: $border-weight $secondary-color;
+  }
+}
+
+%purple-bg-border {
+  border: $border-weight $dark-color;
+  border-radius: 0.3rem;
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: $bg-body-color;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: 
+    "n n n n n n n n n n n n"
+    "p p p j j j j j j c c c"
+    "p p p a a a a a a c c c"
+    "f f f f f f f f f f f f";
+    grid-gap: 10px;
+}
+
+
+// ANCHOR navbar
+#navbar {
+  height: 50px;
+  padding: 5px;
+  background-color: $primary-color;
+  display: grid;
+  grid-area: n;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .navContainer {
+    width: 800px;
+
+    #speaker {
+      color: $secondary-color;
+      cursor: pointer;
+
+      &:hover {
+        color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+        color: #bc80ea;
+      }
+    }
+    .btn-login {
+      background-color: $secondary-color;
+      @extend %btn-style;
+
+      &:hover {
+        background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc80ea', endColorstr='#dfbdfa',GradientType=0);
+        background-color: #bc80ea;
+      }
+      &:active {
+        @extend %btn-move;
+      }
+    }
+  }
+}
+
+
+// ANCHOR Jumbotron
+.jumbotron {
+  width: 800px;
+  height: 220px;
+  margin: 30px auto;
+  background-color: $dark-color;
+  border: $border-weight $primary-color;
+  grid-area: j;
+ }
+
+
+// ANCHOR container with playerboard, chatroom & canvas
+.container {
+  width: 830px;
+
+  .panel-heading {
+    background-color: $secondary-color;
+    color: $text-color;
+    height: 30px;
+    font-size: 20px;
+    padding: 20px 24px;
+  }
+  .playerlist {
+    @extend %purple-bg-border;
+    @extend %table-b-border;
+    min-height: 470px;
+    grid-area: p;
+  }
+  canvas {
+    @extend %purple-bg-border;
+    margin-bottom: 30px;
+    min-height: 220px;
+    grid-area: a;
+  }
+  .chatroom {
+    @extend %purple-bg-border;
+    min-height: 220px;
+    grid-area: c;
+  }
+  img {
+  width: 40px;
+  height: 50px;
+  border-color: #633a71 1px;
+}
+}
+
+
+// ANCHOR footer
+footer {
+  background-color: $dark-color;
+  height: 50px;
+  grid-area: f;
+
+  .footerContainer {
+    width: 800px;
+    .copyright {
+      margin: 0;
+      color: $secondary-color;
+    }
+    .links {
+      width: 300px;
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+  }
+}

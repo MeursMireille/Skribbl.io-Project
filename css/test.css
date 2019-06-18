@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  font-family: "Merienda One", cursive;
+}
+
+.navbar {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: grid;
+  grid-template-columns: 270px auto 270px;
+  grid-template-rows: 50px 50px auto 50px;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  border:2px solid rgb(95, 6, 6);
+}
+
+.navContainer {
+  margin-top: 2px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #a741c0;
+  text-align: center;
+  border:2px solid rgb(233, 75, 36);
+}
+
+.btn-login {
+  background-color: #633a71;
+  border: 2px solid #4b0b61;
+}
+
+.jumbotron {
+  max-width: 800px;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #c38fe9;
+  font-weight: 300;
+  border:2px solid rgb(26, 192, 32);
+}
+
+.playerlist {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #a741c0;
+  border:2px solid rgb(36, 213, 233);
+}
+
+.playersheader {
+  background-color: #4b0b61;
+  color: #f2e0f7;
+}
+
+img {
+  width: 60px;
+  height: 70px;
+  padding: 5px;
+}
+
+table, th, tr, td {
+  padding: 5px;
+}
+
+.canvas {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #e0cae6;
+  border:2px solid rgb(49, 36, 233);
+}
+
+canvas {
+  display: grid;
+  background-color: rgb(240, 234, 234);
+  width: 95%;
+  height: 70%;
+  border:2px solid rgb(233, 75, 36);
+}
+
+input {
+  width: 95%;
+  margin: 5px;
+}
+
+.wit {
+  background-color:white ;
+  width: 20px;
+  height: 20px;
+}
+.geel {
+  background-color: yellow;
+  width: 20px;
+  height: 20px;
+}
+.orange {
+  background-color: orangered;
+  width: 20px;
+  height: 20px;
+}
+.rood {
+  background-color:red;
+  width: 20px;
+  height: 20px;
+}
+.rose {
+  background-color:rgb(206, 66, 129);
+  width: 20px;
+  height: 20px;
+}
+.groen {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+}
+.lichtblauw {
+  background-color: rgb(54, 177, 196);
+  width: 20px;
+  height: 20px;
+}
+.blauw {
+  background-color: rgb(31, 94, 202);
+  width: 20px;
+  height: 20px;
+}
+.donkerblauw {
+  background-color: rgb(5, 5, 75);
+  width: 20px;
+  height: 20px;
+}
+.purper {
+  background-color: rgb(123, 22, 201);
+  width: 20px;
+  height: 20px;
+}
+.bruin {
+  background-color: rgb(94, 38, 12);
+  width: 20px;
+  height: 20px;
+}
+.zwart {
+  background-color: rgb(5, 8, 5);
+  width: 20px;
+  height: 20px;
+}
+.lichtgrijs {
+  background-color: rgb(191, 201, 202);
+  width: 20px;
+  height: 20px;
+}
+.donkergrijs {
+  background-color: rgb(76, 77, 78);
+  width: 20px;
+  height: 20px;
+}
+
+.potlood {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+.borstel {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+.marker {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+.stylo {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+.eraser {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+.trash {
+  background-color: rgb(217, 227, 236);
+  width: 25px;
+  height: 25px;
+}
+
+.chatroom {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #a741c0;
+  border:2px solid rgb(221, 7, 7);
+}
+
+.chatheader {
+  background-color: #4b0b61;
+  color: #f2e0f7;
+}
+
+footer {
+  background-color: rgba(160, 94, 177, 0.2);
+  height: 50px;
+  margin-bottom: 2px; 
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  
+}
+
+span {
+  color:  #53af50;
+}
+
+.footerContainer {
+  width: 800px; 
+}
+
+.copyright {
+      margin: 0;
+      color: #633a71;
+}
+
+.links {
+  width: 300px;
+}
+
+.links a {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #633a71;
+}

@@ -1,0 +1,161 @@
+/*@media only screen and (min-width:640px) {
+   @import "640up";
+}
+@media only screen and (min-width:768px) {
+   @import "768up";
+}
+@media only screen and (min-width:1030px) {
+   @import "1030up";
+}
+@media only screen and (min-width:1240px) {
+   @import "1240up";
+}
+@media print {
+   @import "print";
+}*/
+/*
+//Variables =
+//Colors
+$bodyBackground: #f6f6f6; 
+$buttonColor: white;
+$registerBackground: #f0a30c;
+$buttonborder: #c584f3;
+$backgroundButton: #633a71;
+$navbarBorder: rgba(160, 94, 177, 0.2);
+$navbarBackground: #a05eb1;
+$spanColor: #298939;
+$btnRegister: #f0a30c;
+$btnGuest: #53af50;
+$btnCreateRoom: #633a71;*/
+#navbar .navContainer .btn-login {
+  color: white;
+  padding: 6px 24px;
+  border: 1px solid #c584f3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#navbar .navContainer .btn-login:active {
+  position: relative;
+  top: 2px;
+}
+
+.container .playerlist th,
+.container .playerlist td {
+  border-bottom: 1px solid #633a71;
+}
+
+.container .chatroom, .container canvas, .container .playerlist {
+  border: 1px solid rgba(160, 94, 177, 0.2);
+  border-radius: 0.3rem;
+  background-color: #a05eb1;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #f6f6f6;
+  font-family: "Merienda One", cursive;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas: "n n n n n n n n n n n n" "p p p j j j j j j c c c" "p p p a a a a a a c c c" "f f f f f f f f f f f f";
+  grid-gap: 10px;
+}
+
+#navbar {
+  height: 50px;
+  padding: 5px;
+  background-color: #a05eb1;
+  display: grid;
+  grid-area: n;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#navbar .navContainer {
+  width: 800px;
+}
+#navbar .navContainer #speaker {
+  color: #633a71;
+  cursor: pointer;
+}
+#navbar .navContainer #speaker:hover {
+  color: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  color: #bc80ea;
+}
+#navbar .navContainer .btn-login {
+  background-color: #633a71;
+}
+#navbar .navContainer .btn-login:hover {
+  background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bc80ea", endColorstr="#dfbdfa",GradientType=0);
+  background-color: #bc80ea;
+}
+.jumbotron {
+  width: 800px;
+  height: 220px;
+  margin: 30px auto;
+  background-color: rgba(160, 94, 177, 0.2);
+  border: 1px solid #a05eb1;
+  grid-area: j;
+}
+
+.container {
+  width: 830px;
+}
+.container .panel-heading {
+  background-color: #633a71;
+  color: white;
+  height: 30px;
+  font-size: 20px;
+  padding: 20px 24px;
+}
+.container .playerlist {
+  min-height: 470px;
+  grid-area: p;
+}
+.container canvas {
+  margin-bottom: 30px;
+  min-height: 220px;
+  grid-area: a;
+}
+.container .chatroom {
+  min-height: 220px;
+  grid-area: c;
+}
+.container img {
+  width: 40px;
+  height: 50px;
+  border-color: #633a71 1px;
+}
+
+footer {
+  background-color: rgba(160, 94, 177, 0.2);
+  height: 50px;
+  grid-area: f;
+}
+footer .footerContainer {
+  width: 800px;
+}
+footer .footerContainer .copyright {
+  margin: 0;
+  color: #633a71;
+}
+footer .footerContainer .links {
+  width: 300px;
+}
+footer .footerContainer .links a {
+  text-decoration: none;
+  color: #633a71;
+}
+
+/*# sourceMappingURL=responsive.css.map */
